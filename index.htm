@@ -1,0 +1,32 @@
+﻿<html>
+  <head>
+    <!--
+	  这只是一个网页而已，你们千万不要拿它干不好的事情啊！
+	  如果你萌玩SQL注入什么的，见鬼，我会用靴子狠狠地踢你们的屁股。
+	  我发誓，我一定会这样做的！
+	-->
+    <title>
+	  生成一个新的时间表
+	</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+    <form action="edit.php" method="post">
+      <div style="text-align:center; font:size-larger; font-weight:bold">
+	    先来填点基本信息...
+	  </div>
+	  <p>
+	    在时间表上的文字说明：
+	  </p>
+	  <textarea rows="3" id="desc" name="desc"></textarea>
+	  <p>
+	    是否允许其他人看结果？<br/>允许请留空，否则请输入查看密码：
+	  </p>
+	  <input type="password" id="pass" name="pass" maxlength="25"/>
+	  <input type="hidden" id="create" name="create" value="yes"/>
+	  <br/>
+	  <input type="submit" value="然后呢？"/>
+	</form>
+  </body>
+</html>
